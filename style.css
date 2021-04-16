@@ -20,7 +20,6 @@ html {
   /* border: springgreen solid 1px; */
   width: 50%;
   margin: 10px auto;
-  height: 30px;
   overflow: auto;
 }
 
@@ -42,6 +41,9 @@ html {
 
 .nav.dua :hover {
   cursor: pointer;
+  background-color: rgb(243, 167, 52);
+  border-radius: 10px;
+  color: white;
 }
 
 .nav.dua a {
@@ -53,6 +55,10 @@ html {
   margin-top: 18px;
   text-decoration: none;
   color: black;
+  padding: 10px 0 10px 0;
+  /* border: rgb(223, 147, 33) solid 2px; */
+  position: relative;
+  bottom: 10px;
 }
 
 .nav.dua button:hover {
@@ -104,6 +110,11 @@ html {
   font-size: 13px;
   box-shadow: rgb(223, 147, 33) 2px 2px 10px;
   font-weight: 600;
+}
+
+.containSatu.satu button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /* CONTAINER 2 */
@@ -195,16 +206,17 @@ html {
   font-weight: 600;
 }
 
+.containTiga.dua button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* CONTAINER EMPAT */
 .containerEmpat {
   display: flex;
   flex-direction: row;
   /* border: black solid 3px; */
   margin-top: 50px;
-}
-
-.containEmpat {
-  /* border: red solid 2px; */
 }
 
 .containEmpat.satu {
@@ -302,6 +314,11 @@ html {
   font-weight: 600;
 }
 
+.subcontainLima button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .subcontainLima.besar {
   transform: scale(1.12);
   border: rgb(243, 167, 52) dashed 2px;
@@ -325,11 +342,13 @@ html {
 }
 
 .containEnam.satu {
+  order: 2;
   text-align: center;
 }
 
 .containEnam.satu img {
-  width: 500px;
+  width: auto;
+  height: 500px;
 }
 
 input {
@@ -337,7 +356,7 @@ input {
   border: 0;
   box-shadow: rgb(207, 207, 207) 2px 2px 10px;
   height: 40px;
-  width: 200px;
+  width: 425px;
   border-radius: 10px;
   padding: 10px;
   box-sizing: border-box;
@@ -355,7 +374,7 @@ input {
 
 .containEnam.dua {
   padding-top: 10%;
-  padding: 60px;
+  padding: 100px 100px 100px 150px;
   box-sizing: border-box;
 }
 .containEnam.dua button {
@@ -371,12 +390,21 @@ input {
   font-weight: 600;
 }
 
+.containEnam.dua button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* FOOTER */
 .footer {
   /* border: black solid 3px; */
   margin-top: 50px;
+  height: 400px;
   display: flex;
   flex-direction: row;
+  background-color: rgb(243, 167, 52);
+  color: white;
+  padding-top: 100px;
 }
 
 .foot.satu {
@@ -385,12 +413,5 @@ input {
   flex: 1;
   padding: 60px 30px 0 100px;
   box-sizing: border-box;
-}
-
-.foot.dua img {
   width: 200px;
-}
-
-.foot.dua {
-  flex: 1;
 }
